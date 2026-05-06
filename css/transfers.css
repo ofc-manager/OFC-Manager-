@@ -1,0 +1,184 @@
+.transfers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 100px;
+}
+
+.transfers-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.transfers-section h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00d4ff;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #00d4ff;
+  padding-bottom: 10px;
+}
+
+.transfer-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: linear-gradient(135deg, #0f2847 0%, #1a3a52 100%);
+  border-radius: 8px;
+  border-left: 4px solid #00d4ff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.transfer-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 12px rgba(0, 212, 255, 0.2);
+}
+
+.transfer-card.sent {
+  border-left-color: #ff6b6b;
+}
+
+.transfer-card.received {
+  border-left-color: #51cf66;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.player-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.player-info .ovr {
+  font-size: 14px;
+  color: #00d4ff;
+}
+
+.player-info .club {
+  font-size: 12px;
+  color: #b0b0b0;
+}
+
+.offer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.transfer-card.received .offer-details {
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.offer-details .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #51cf66;
+}
+
+.offer-details .from {
+  font-size: 12px;
+  color: #b0b0b0;
+}
+
+.status {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.status.pending {
+  background-color: #ffa94d;
+  color: white;
+}
+
+.status.accepted {
+  background-color: #51cf66;
+  color: white;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-accept {
+  background-color: #51cf66;
+  color: white;
+}
+
+.btn-accept:hover {
+  background-color: #37b24d;
+  transform: scale(1.05);
+}
+
+.btn-reject {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.btn-reject:hover {
+  background-color: #fa5252;
+  transform: scale(1.05);
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  background: #07111f;
+  padding: 15px;
+  z-index: 10;
+  border-bottom: 2px solid #00d4ff;
+}
+
+.topbar h1 {
+  font-size: 24px;
+  color: #00d4ff;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .transfer-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .offer-details {
+    width: 100%;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .btn {
+    padding: 12px 10px;
+  }
+}
