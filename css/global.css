@@ -1,0 +1,10 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial; }
+body { background: #07111f; color: white; }
+
+.screen { display: none; }
+
+.screen.active { display: block; }
+
+.bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: 80px; background: #0c1c34; display: flex; justify-content: space-around; align-items: center; }
+
+.nav-btn { color: white; background: none; border: none; font-size: 16px; }
