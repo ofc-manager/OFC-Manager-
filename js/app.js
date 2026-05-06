@@ -4,6 +4,7 @@ import { MatchesScreen } from '../screens/matches.js';
 import { TransfersScreen } from '../screens/transfers.js';
 
 import { setupNavigation } from './navigation.js';
+import { setupTransfers } from './transfers.js';
 
 const app = document.getElementById('app');
 
@@ -37,3 +38,4 @@ ${TransfersScreen()}
 `;
 
 setupNavigation();
+setupTransfers();
