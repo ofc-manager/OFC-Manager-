@@ -49,8 +49,8 @@ export function TransfersScreen() {
             <p class="from">De: Manchester United</p>
           </div>
           <div class="actions">
-            <button class="btn btn-accept">Aceitar</button>
-            <button class="btn btn-reject">Recusar</button>
+            <button class="btn btn-accept" data-action="accept">Aceitar</button>
+            <button class="btn btn-reject" data-action="reject">Recusar</button>
           </div>
         </div>
 
@@ -65,8 +65,8 @@ export function TransfersScreen() {
             <p class="from">De: Paris Saint-Germain</p>
           </div>
           <div class="actions">
-            <button class="btn btn-accept">Aceitar</button>
-            <button class="btn btn-reject">Recusar</button>
+            <button class="btn btn-accept" data-action="accept">Aceitar</button>
+            <button class="btn btn-reject" data-action="reject">Recusar</button>
           </div>
         </div>
       </div>
